@@ -1,0 +1,20 @@
+{
+	"name": "LiquidCrystal_MCP23017_I2C",
+	"frameworks": "Arduino",
+	"keywords": "LiquidCrystal MCP23017 I2C",
+	"description": "Arduino library for Liquid Crystal displays controlled by MCP23017 I2C port expander.",
+	"authors":
+	[
+		{
+			"name": "Andreas Trappmann",
+			"email": "andreas.trappmann@t-online.de",
+			"url": "https://github.com/ATrappmann/LiquidCrystal_MCP23017_I2C",
+			"maintainer": true
+		}
+	],
+	"repository":
+	{
+		"type": "git",
+		"url": "https://github.com/ATrappmann/LiquidCrystal_MCP23017_I2C"
+	}
+}
