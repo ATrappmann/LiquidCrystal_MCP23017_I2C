@@ -64,6 +64,13 @@
 // can't assume that its in that state when a sketch starts (and the
 // LiquidCrystal constructor is called).
 
+LiquidCrystal_MCP23017_I2C::LiquidCrystal_MCP23017_I2C(uint8_t i2c_addr) {
+    init(false, i2c_addr,
+         MCP23017_PA7, MCP23017_PA6, MCP23017_PA5, MCP23017_PA1,
+         MCP23017_PB0, MCP23017_PB1, MCP23017_PB2, MCP23017_PB3,
+         MCP23017_PB4, MCP23017_PB5, MCP23017_PB6, MCP23017_PB7);
+}
+
 LiquidCrystal_MCP23017_I2C::LiquidCrystal_MCP23017_I2C(uint8_t i2c_addr, uint16_t rs, uint16_t rw, uint16_t en, uint16_t backlight,
            uint16_t d0, uint16_t d1, uint16_t d2, uint16_t d3,
            uint16_t d4, uint16_t d5, uint16_t d6, uint16_t d7)
@@ -116,10 +123,10 @@ void LiquidCrystal_MCP23017_I2C::init(bool fourbitmode, uint8_t i2c_addr, uint16
   if (fourbitmode) firstPin = 4;
   _data_port = MCP23017_digitalPinToPort(_data_pins[firstPin]);
   for (int i=firstPin+1; i<8; i++) {
-	if (_data_port != MCP23017_digitalPinToPort(_data_pins[i])) {
-	  _data_port = 0;
-	  break;
-	}
+	  if (_data_port != MCP23017_digitalPinToPort(_data_pins[i])) {
+	    _data_port = 0;
+	    break;
+	  }
   }
 
   _gpioa_value = 0x00;

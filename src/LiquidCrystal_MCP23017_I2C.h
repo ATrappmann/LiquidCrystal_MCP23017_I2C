@@ -92,6 +92,8 @@
 
 class LiquidCrystal_MCP23017_I2C : public Print {
 public:
+  LiquidCrystal_MCP23017_I2C(uint8_t i2c_addr);
+
   LiquidCrystal_MCP23017_I2C(uint8_t i2c_addr, uint16_t rs, uint16_t rw, uint16_t enable, uint16_t backlight,
     uint16_t d0, uint16_t d1, uint16_t d2, uint16_t d3,
     uint16_t d4, uint16_t d5, uint16_t d6, uint16_t d7);

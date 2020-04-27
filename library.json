@@ -1,8 +1,8 @@
 {
 	"name": "LiquidCrystal_MCP23017_I2C",
 	"frameworks": "Arduino",
-	"keywords": "LiquidCrystal MCP23017 I2C",
-	"description": "Arduino library for Liquid Crystal displays controlled by MCP23017 I2C port expander.",
+	"keywords": "LiquidCrystal MCP23017 LCD I2C",
+	"description": "Arduino library for LiquidCrystal displays controlled by MCP23017 I2C port expander.",
 	"authors":
 	[
 		{
