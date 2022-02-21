@@ -38,7 +38,7 @@
 #include <Wire.h>
 
 #define MCP23017_IODIRA  0x00
-#define MCP23017_IODIRB  0x01
+#define MCP23017_IODIRB  0x01 
 #define MCP23017_GPIOA   0x12
 #define MCP23017_GPIOB   0x13
 

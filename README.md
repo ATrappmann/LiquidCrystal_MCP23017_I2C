@@ -21,7 +21,7 @@ construtors either for 8-bit mode or for 4-bit mode.
 ![LCD1602 pin layout](./doc/05_IMG_2058.png)
 
 ## Copyright
-**LiquidCrystal_MCP23017_I2C** is ritten by Andreas Trappmann from
+**LiquidCrystal_MCP23017_I2C** is written by Andreas Trappmann from
 [Trappmann-Robotics.de](https://www.trappmann-robotics.de/). It is published
 under the MIT license, check LICENSE for more information.
 All text above must be included in any redistribution
